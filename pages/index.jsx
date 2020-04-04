@@ -1,6 +1,7 @@
 import React from 'react';
 import { useUser } from '../lib/hooks';
 import Header from '../components/header';
+import BingoTitleForm from '../components/bingoTitleForm';
 
 const IndexPage = () => {
   const [user] = useUser();
@@ -17,15 +18,7 @@ const IndexPage = () => {
       </style>
       <div>
         <Header />
-        {
-        // <h2>
-        //   Hello,
-        //   {' '}
-        //   {user ? user.name : 'stranger'}
-        //   !
-        // </h2>
-        // <p>Have a wonderful day.</p>
-        }
+        <BingoTitleForm />
       </div>
     </>
   );
